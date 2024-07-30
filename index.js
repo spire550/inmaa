@@ -22,8 +22,8 @@ app.use((req, res, next) => {
 });
 const port = process.env.PORT;
 app.use(express.json());
-app.use(bodyParser.json({ limit: "10mb" }));
-app.use(bodyParser.urlencoded({ extended: true, limit: "10mb" }));
+app.use(bodyParser.json({ limit: "50mb" }));
+app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 app.use("/realEsate", realEstate);
 app.use("/commercial", commercialEstate);
 app.use("/message", message);
