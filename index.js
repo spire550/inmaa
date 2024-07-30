@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import realEstate from "./src/module/normal/realEstate.router.js";
 import commercialEstate from "./src/module/commercial/commercial.router.js";
 import message from "./src/module/message/message.router.js";
+import bodyParser from "body-parser";
 
 dotenv.config();
 const app = express();
@@ -21,7 +22,8 @@ app.use((req, res, next) => {
 });
 const port = process.env.PORT;
 app.use(express.json());
-
+app.use(bodyParser.json({ limit: "10mb" }));
+app.use(bodyParser.urlencoded({ extended: true, limit: "10mb" }));
 app.use("/realEsate", realEstate);
 app.use("/commercial", commercialEstate);
 app.use("/message", message);
