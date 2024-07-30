@@ -91,7 +91,7 @@ export const add = async (req, res, next) => {
     unitAutoRenewal,
     unitNotes,
   } = req.body;
- /*  const ownerImage = [];
+  const ownerImage = [];
   const clientImage = [];
   const sakImage = [];
   const familyImages = [];
@@ -149,7 +149,7 @@ export const add = async (req, res, next) => {
         folder: `images/realEstate`,
       });
     agentImage.push({ secure_url, public_id });
-  } */
+  }
 
   const test = await estateModel.create({
     ownerName,
@@ -238,12 +238,12 @@ export const add = async (req, res, next) => {
     unitContract,
     unitAutoRenewal,
     unitNotes,
-   /*  ownerImage,
+    ownerImage,
     clientImage,
     sakImage,
     familyImages,
     agencyImage,
-    agentImage, */
+    agentImage,
   });
   return res.json({ success: true, message: "Data Added Successfully" });
 };
