@@ -5,9 +5,10 @@ import realEstate from "./src/module/normal/realEstate.router.js";
 import commercialEstate from "./src/module/commercial/commercial.router.js";
 import message from "./src/module/message/message.router.js";
 import bodyParser from "body-parser";
-
+import cors from "cors";
 dotenv.config();
 const app = express();
+app.use(cors());
 const whitelist = [];
 app.use((req, res, next) => {
   console.log(req.header("origin"));
@@ -23,8 +24,7 @@ app.use((req, res, next) => {
 const port = process.env.PORT;
 app.use(bodyParser.json({ limit: "50mb" }));
 app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
-app.use(express.json({ limit: "50mb" }));
-app.use(express.urlencoded({ limit: "50mb" }));
+app.use(express.json());
 app.use("/realEsate", realEstate);
 app.use("/commercial", commercialEstate);
 app.use("/message", message);
