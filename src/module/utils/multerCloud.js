@@ -19,7 +19,7 @@ export const uploadFileCloud = ({ extensions = allowedExtensions.image }) => {
     }
   }
 
-  const file = multer({ fileFilter, storage, limits: { fileSize: 1024 * 1024 * 5 } });
+  const file = multer({ fileFilter, storage, limits: { fileSize: 1024 * 1024 * 10 } });
 
   return file;
 };
