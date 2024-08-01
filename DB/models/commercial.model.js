@@ -220,9 +220,7 @@ const commercialSchema = new Schema(
     clientAgencyDateYear: {
       type: String,
     },
-    clientAgentName: {
-      type: String,
-    },
+    
     clientAgencyPhone: {
       type: String,
     },
