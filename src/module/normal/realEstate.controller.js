@@ -5,7 +5,7 @@ export const add = async (req, res, next) => {
     ownerName,
     ownerID,
     ownerPhone,
-    bankName,
+    bankName,//
     IBAN,
     email,
     ownerBuildingNum,
@@ -25,9 +25,9 @@ export const add = async (req, res, next) => {
     streetName,
     aprtmentsNum,
     elevatorNum,
-    buildingDay,
-    buildingMonth,
-    buildingYear,
+    buildingDay,//
+    buildingMonth,//
+    buildingYear,//
     ownerAgencyNum,
     ownerAgencyDate,
     ownerAgentName,
@@ -152,92 +152,92 @@ export const add = async (req, res, next) => {
   }
 
   const test = await estateModel.create({
-    ownerName,
-    ownerID,
-    ownerPhone,
-    bankName,
-    IBAN,
-    email,
-    ownerBuildingNum,
-    postalCode,
+    ownerName,//
+    ownerID,//
+    ownerPhone,//
+    bankName,//
+    IBAN,//
+    email,//
+    ownerBuildingNum,//
+    postalCode,//
     sakNumber,
-    sakDay,
-    sakMonth,
-    sakYear,
-    floorNum,
-    mawaqfNum,
-    buildingName,
-    dayBD,
-    monthBD,
-    yearBD,
-    addCode,
-    district,
-    streetName,
-    aprtmentsNum,
-    elevatorNum,
-    buildingDay,
-    buildingMonth,
-    buildingYear,
-    ownerAgencyNum,
-    ownerAgencyDate,
-    ownerAgentName,
-    ownerAgencyPhone,
-    ownerAgencyDay,
-    ownerAgencyMonth,
-    ownerAgencyYear,
-    ownerAgencyEmail,
-    clientName,
-    clientIDNumber,
-    clientPhone,
-    clientEmail,
-    clientDayBD,
-    clientMonthBD,
-    clientYearBD,
-    clientDayBDHJ,
-    clientMonthBDHJ,
-    clientYearBDHJ,
-    clientAgencyNum,
-    clientAgencyDate,
-    clientAgentName,
-    clientAgencyPhone,
-    clientAgencyDay,
-    clientAgencyMonth,
-    clientAgencyYear,
-    clientAgencyEmail,
-    unitNum,
-    unitFloor,
-    unitBedRooms,
-    unitSeats,
-    unitHalls,
-    unitMaidRooms,
-    unitStoreNum,
-    unitKitchenNum,
-    unitBathroomNum,
-    unitYardNum,
-    unitTypeQ,
-    unitTypeOther,
-    unitFornitureQ,
-    unitKitchenDrawerQ,
-    unitACQ,
-    unitACNormalNum,
-    unitACCnetralNum,
-    unitSplitNum,
-    unitWindowNum,
-    unitElecNum,
-    unitElecRead,
-    unitWaterNum,
-    unitWaterRead,
-    unitGasNum,
+    sakDay,//
+    sakMonth,//
+    sakYear,//
+    floorNum,//
+    mawaqfNum,//
+    buildingName,//
+    dayBD,//
+    monthBD,//
+    yearBD,//
+    addCode,//
+    district,//
+    streetName,//
+    aprtmentsNum,//
+    elevatorNum,//
+    buildingDay,//
+    buildingMonth,//
+    buildingYear,//
+    ownerAgencyNum,//
+    ownerAgencyDate,//
+    ownerAgentName,//
+    ownerAgencyPhone,//
+    ownerAgencyDay,//
+    ownerAgencyMonth,//
+    ownerAgencyYear,//
+    ownerAgencyEmail,//
+    clientName,//
+    clientIDNumber,//
+    clientPhone,//
+    clientEmail,//
+    clientDayBD,//
+    clientMonthBD,//
+    clientYearBD,//
+    clientDayBDHJ,//
+    clientMonthBDHJ,//
+    clientYearBDHJ,//
+    clientAgencyNum,//
+    clientAgencyDate,//
+    clientAgentName,//
+    clientAgencyPhone,//
+    clientAgencyDay,//
+    clientAgencyMonth,//
+    clientAgencyYear,//
+    clientAgencyEmail,//
+    unitNum,//
+    unitFloor,//
+    unitBedRooms,//
+    unitSeats,//
+    unitHalls,//
+    unitMaidRooms,//
+    unitStoreNum,//
+    unitKitchenNum,//
+    unitBathroomNum,//
+    unitYardNum,//
+    unitTypeQ,//
+    unitTypeOther,//
+    unitFornitureQ,//
+    unitKitchenDrawerQ,//
+    unitACQ,//
+    unitACNormalNum,//
+    unitACCnetralNum,//
+    unitSplitNum,//
+    unitWindowNum,//
+    unitElecNum,//
+    unitElecRead,//
+    unitWaterNum,//
+    unitWaterRead,//
+    unitGasNum,//
     unitGasRead,
-    unitPrice,
-    unitInsurance,
-    unitDay,
-    unitMonth,
-    unitYear,
-    unitPayment,
-    unitContract,
-    unitAutoRenewal,
-    unitNotes,
+    unitPrice,//
+    unitInsurance,//
+    unitDay,//
+    unitMonth,//
+    unitYear,//
+    unitPayment,//
+    unitContract,//
+    unitAutoRenewal,//
+    unitNotes,//
     ownerImage,
     clientImage,
     sakImage,
