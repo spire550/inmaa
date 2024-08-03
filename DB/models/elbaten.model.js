@@ -1,4 +1,3 @@
-import { required } from "joi";
 import mongoose, { Schema, Types } from "mongoose";
 
 const elbatenSchema = new Schema(
