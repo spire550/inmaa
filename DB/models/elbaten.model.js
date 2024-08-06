@@ -16,7 +16,15 @@ const elbatenSchema = new Schema(
       type: String,
       required: true,
     },
-    contractDate: {
+    contractDateYear: {
+      type: String,
+      required: true,
+    },
+    contractDateMonth: {
+      type: String,
+      required: true,
+    },
+    contractDateDay: {
       type: String,
       required: true,
     },
@@ -25,11 +33,27 @@ const elbatenSchema = new Schema(
       type: String,
       required: true,
     },
-    contractStartDate: {
+    contractStartDateYear: {
       type: String,
       required: true,
     },
-    contractEndDate: {
+    contractStartDateMonth: {
+      type: String,
+      required: true,
+    },
+    contractStartDateDay: {
+      type: String,
+      required: true,
+    },
+    contractEndDateYear: {
+      type: String,
+      required: true,
+    },
+    contractEndDateMonth: {
+      type: String,
+      required: true,
+    },
+    contractEndDateDay: {
       type: String,
       required: true,
     },
@@ -119,7 +143,13 @@ const elbatenSchema = new Schema(
     sakIssuer: {
       type: String,
     },
-    sakDate: {
+    sakDateYear: {
+      type: String,
+    },
+    sakDateMonth: {
+      type: String,
+    },
+    sakDateDay: {
       type: String,
     },
     sakAddress: {
@@ -243,16 +273,40 @@ const elbatenSchema = new Schema(
     serialNumber: {
       type: Number,
     },
-    serialDate: {
+    serialDateYear: {
       type: String,
     },
-    serialDateEnd: {
+    serialDateMonth: {
       type: String,
     },
-    serialDateHJ: {
+    serialDateDay: {
       type: String,
     },
-    serialDateEndHJ: {
+    serialDateEndYear: {
+      type: String,
+    },
+    serialDateEndMonth: {
+      type: String,
+    },
+    serialDateEndDay: {
+      type: String,
+    },
+    serialDateHJYear: {
+      type: String,
+    },
+    serialDateHJMonth: {
+      type: String,
+    },
+    serialDateHJDay: {
+      type: String,
+    },
+    serialDateEndHJYear: {
+      type: String,
+    },
+    serialDateEndHJMonth: {
+      type: String,
+    },
+    serialDateEndHJDay: {
       type: String,
     },
     serialValue: {
