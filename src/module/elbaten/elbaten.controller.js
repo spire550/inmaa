@@ -236,3 +236,11 @@ export const getAllData = async (req, res, next) => {
   }
   res.json({ success: true, data });
 };
+
+export const getAllDatawithoutpage = async (req, res, next) => {
+  const data = await elbatenModel.find();
+  if (!data.length) {
+    return next(new Error("No Data exists"));
+  }
+  res.json({ success: true, data });
+};

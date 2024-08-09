@@ -17,5 +17,6 @@ router.post(
   ]),
   asyncHandler(commercialController.add)
 );
-router.get("/", asyncHandler(commercialController.getAllData));
+router.get("/", asyncHandler(commercialController.getAllDatawithoutpage));
+router.get("/page", asyncHandler(commercialController.getAllData));
 export default router;

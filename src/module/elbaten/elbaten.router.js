@@ -14,5 +14,6 @@ router.post(
   ]),
   asyncHandler(elbatenController.add)
 );
-router.get("/", asyncHandler(elbatenController.getAllData));
+router.get("/", asyncHandler(elbatenController.getAllDatawithoutpage));
+router.get("/page", asyncHandler(elbatenController.getAllData));
 export default router;

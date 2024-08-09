@@ -17,5 +17,6 @@ router.post(
   ]),
   asyncHandler(realEstateController.add)
 );
-router.get("/", asyncHandler(realEstateController.getAllData));
+router.get("/", asyncHandler(realEstateController.getAllDatawithoutpage));
+router.get("/page", asyncHandler(realEstateController.getAllData));
 export default router;
