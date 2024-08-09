@@ -22,6 +22,15 @@ const commercialSchema = new Schema(
     email: {
       type: String,
     },
+        ownerDateYear: {
+      type: String,
+    },
+        ownerDateMonth: {
+      type: String,
+    },
+        ownerDateDay: {
+      type: String,
+    },
     bankName: {
       type: String,
       required: true,
