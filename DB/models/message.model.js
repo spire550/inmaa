@@ -2,11 +2,11 @@ import mongoose, { Schema, Types } from "mongoose";
 
 const messageSchema = new mongoose.Schema(
   {
-    name: { type: String },
-    phone: { type: String },
-    email: { type: String },
-    subject: { type: String },
-    message: { type: String },
+    name: { type: String,  required: true, },
+    phone: { type: String,  required: true, },
+    email: { type: String ,  required: true,},
+    subject: { type: String,  required: true, },
+    message: { type: String,  required: true, },
   },
   {
     timestamps: true,
