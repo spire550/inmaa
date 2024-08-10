@@ -378,6 +378,9 @@ const commercialSchema = new Schema(
     permissionQ7Answer: {
       type: String,
     },
+    permissionQ8Answer: {
+      type: String,
+    },
     // commitment
     commitmentQ1Answer1: {
       type: String,
