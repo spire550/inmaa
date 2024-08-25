@@ -13,8 +13,8 @@ app.use(cors());
 const whitelist = [];
 app.use((req, res, next) => {
   console.log(req.header("origin"));
-    if (!whitelist.includes(req.header("origin"))) {
-    return next(new Error("Blocked"));
+   /*if (!whitelist.includes(req.header("origin"))) {
+    return next(new Error("Blocked")); */
   } 
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Headers", "*");
