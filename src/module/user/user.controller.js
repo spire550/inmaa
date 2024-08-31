@@ -36,5 +36,6 @@ export const signIn = async (req, res, next) => {
   return res.json({
     success: true,
     message: "you logged in successfully",
+    email,
   });
 };
