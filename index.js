@@ -5,6 +5,7 @@ import realEstate from "./src/module/normal/realEstate.router.js";
 import commercialEstate from "./src/module/commercial/commercial.router.js";
 import elbatenEstate from "./src/module/elbaten/elbaten.router.js";
 import message from "./src/module/message/message.router.js";
+import user from "./src/module/user/user.router.js";
 import bodyParser from "body-parser";
 import cors from "cors";
 dotenv.config();
@@ -13,8 +14,8 @@ app.use(cors());
 const whitelist = [];
 app.use((req, res, next) => {
   console.log(req.header("origin"));
-  /* if (!whitelist.includes(req.header("origin"))) {
-    return next(new Error("Blocked")); 
+  /*  if (!whitelist.includes(req.header("origin"))) {
+    return next(new Error("Blocked"));
   } */
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Headers", "*");
@@ -31,6 +32,7 @@ app.use("/realEsate", realEstate);
 app.use("/commercial", commercialEstate);
 app.use("/elbaten", elbatenEstate);
 app.use("/message", message);
+app.use("/user", user);
 
 app.use("*", (req, res) => {
   return res.json({ message: "Invalid URL" });

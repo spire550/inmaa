@@ -22,15 +22,6 @@ const commercialSchema = new Schema(
     email: {
       type: String,
     },
-        ownerDateYear: {
-      type: String,
-    },
-        ownerDateMonth: {
-      type: String,
-    },
-        ownerDateDay: {
-      type: String,
-    },
     bankName: {
       type: String,
       required: true,
@@ -376,9 +367,6 @@ const commercialSchema = new Schema(
       type: String,
     },
     permissionQ7Answer: {
-      type: String,
-    },
-    permissionQ8Answer: {
       type: String,
     },
     // commitment
