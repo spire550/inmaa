@@ -11,7 +11,7 @@ import cors from "cors";
 dotenv.config();
 const app = express();
 app.use(cors());
-const whitelist = ["https://sarhalwaleed.com/"];
+const whitelist = ["https://sarhalwaleed.com"];
 app.use((req, res, next) => {
   console.log(req.header("origin"));
     if (!whitelist.includes(req.header("origin"))) {
